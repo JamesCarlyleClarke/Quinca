@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roof Types</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #111111;
+        }
+
+        .page {
+            width: 100%;
+            margin: 0;
+            padding: 24px 5px 20px;
+            max-width: none;
+        }
+
+        section {
+            margin-bottom: 56px; /* larger gap after each section */
+        }
+
+        .title-block {
+            margin-bottom: 28px; /* gap after title block before images */
+        }
+
+        .title-line {
+            width: 50%;
+            height: 3px;
+            background: #222222;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+            .title-line {
+                width: 50%;
+                height: 2px;
+            }
+        }
+
+            .title-line.top {
+                margin-bottom: 12px; /* close to title */
+            }
+
+            .title-line.bottom {
+                margin-top: 10px; /* close to title */
+            }
+
+        h2 {
+            margin: 0;
+            text-align: center;
+            font-size: clamp(1.8rem, 6vw, 4rem);
+            font-weight: 700;
+            line-height: 1.2;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.5px;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+            .images img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+        footer {
+            margin-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #444444;
+        }
+
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.9rem;
+            }
+
+            .title-line {
+                width: 72%;
+                height: 2px;
+            }
+
+                .title-line.top {
+                    margin-bottom: 8px;
+                }
+
+                .title-line.bottom {
+                    margin-top: 8px;
+                }
+
+            .title-block {
+                margin-bottom: 20px;
+            }
+
+            .images {
+                gap: 8px;
+            }
+
+            section {
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <section>
+            <div class="title-block">
+                <div class="title-line top"></div>
+                <h2>Gable Roof</h2>
+                <div class="title-line bottom"></div>
+            </div>
+            <div class="images">
+                <img src="gable-1.jpg" alt="Gable roof image 1" />
+                <img src="gable-2.jpg" alt="Gable roof image 2" />
+                <img src="gable-3.jpg" alt="Gable roof image 3" />
+            </div>
+        </section>
+
+        <section>
+            <div class="title-block">
+                <div class="title-line top"></div>
+                <h2>Shed Roof</h2>
+                <div class="title-line bottom"></div>
+            </div>
+            <div class="images">
+                <img src="shed-1.jpg" alt="Shed roof image 1" />
+                <img src="shed-2.jpg" alt="Shed roof image 2" />
+            </div>
+        </section>
+
+        <section>
+            <div class="title-block">
+                <div class="title-line top"></div>
+                <h2>Flat Roof</h2>
+                <div class="title-line bottom"></div>
+            </div>
+            <div class="images">
+                <img src="flat-1.jpg" alt="Flat roof image 1" />
+                <img src="flat-2.jpg" alt="Flat roof image 2" />
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 David Quinn and James Carlyle-Clarke. All Rights Reserved.
+        </footer>
+    </main>
+</body>
+</html>
