@@ -119,7 +119,7 @@
 
         /* Hero / intro block */
         .hero {
-            padding: 300px 0; /* large vertical space (adjust if needed) */
+            padding: 0px 0 100px 0; /* large vertical space (adjust if needed) */
             text-align: center;
         }
 
@@ -136,6 +136,28 @@
         .hero h2 {
             font-size: clamp(2.4rem, 7vw, 5rem);
         }
+
+        .two-images {
+            display: flex;
+            gap: 0; /* explicit: no gap */
+        }
+
+            .two-images img {
+                width: 50%;
+                height: auto;
+                display: block;
+            }
+
+        .half-image-right {
+            display: flex;
+            justify-content: flex-end; /* pushes image to the right */
+        }
+
+            .half-image-right img {
+                width: 50%;
+                height: auto;
+                display: block;
+            }
     </style>
 </head>
 <body>
@@ -156,8 +178,15 @@
             </div>
             <div class="images">
                 <!--img src="gable-1.jpg" alt="Gable roof image 1" />
-                <img src="gable-2.jpg" alt="Gable roof image 2" /-->
+    <img src="gable-2.jpg" alt="Gable roof image 2" /-->
                 <img src="gable-3.jpg" alt="Gable roof image 3" />
+                <div class="half-image-right">
+                    <img src="gable-2.jpg" alt="">
+                </div>
+                <!--div class="two-images">
+        <img src="gable-1.jpg" alt="">
+        <img src="gable-2.jpg" alt="">
+    </div-->
             </div>
         </section>
 
@@ -170,6 +199,9 @@
             <div class="images">
                 <img src="flat-1.jpg" alt="Flat roof image 1" />
                 <!--img src="flat-2.jpg" alt="Flat roof image 2" /-->
+                <div class="half-image-right">
+                    <img src="flat-2-bright.jpg" alt="">
+                </div>
             </div>
         </section>
 
@@ -182,6 +214,9 @@
             <div class="images">
                 <!--img src="shed-1.jpg" alt="Shed roof image 1" /-->
                 <img src="shed-2.jpg" alt="Shed roof image 2" />
+            </div>
+            <div class="half-image-right">
+                <img src="shed-1.jpg" alt="">
             </div>
         </section>
 
