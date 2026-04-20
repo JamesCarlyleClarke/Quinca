@@ -116,10 +116,38 @@
                 margin-bottom: 40px;
             }
         }
+
+        /* Hero / intro block */
+        .hero {
+            padding: 300px 0; /* large vertical space (adjust if needed) */
+            text-align: center;
+        }
+
+        /* Subtitle (Quinca line) */
+        .subtitle {
+            margin-top: 12px;
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        /* Optional: slightly larger main title in hero */
+        .hero h2 {
+            font-size: clamp(2.4rem, 7vw, 5rem);
+        }
     </style>
 </head>
 <body>
     <main class="page">
+        <section class="hero">
+            <div class="title-block">
+                <h2>Hopkins House</h2>
+                <div class="title-line bottom"></div>
+                <div class="subtitle">by Quinca Developer and Design</div>
+            </div>
+        </section>
+
         <section>
             <div class="title-block">
                 <div class="title-line top"></div>
@@ -127,12 +155,12 @@
                 <div class="title-line bottom"></div>
             </div>
             <div class="images">
-                <img src="gable-1.jpg" alt="Gable roof image 1" />
-                <img src="gable-2.jpg" alt="Gable roof image 2" />
+                <!--img src="gable-1.jpg" alt="Gable roof image 1" />
+                <img src="gable-2.jpg" alt="Gable roof image 2" /-->
                 <img src="gable-3.jpg" alt="Gable roof image 3" />
             </div>
         </section>
-        
+
         <section>
             <div class="title-block">
                 <div class="title-line top"></div>
@@ -141,10 +169,10 @@
             </div>
             <div class="images">
                 <img src="flat-1.jpg" alt="Flat roof image 1" />
-                <img src="flat-2.jpg" alt="Flat roof image 2" />
+                <!--img src="flat-2.jpg" alt="Flat roof image 2" /-->
             </div>
         </section>
-        
+
         <section>
             <div class="title-block">
                 <div class="title-line top"></div>
@@ -152,7 +180,7 @@
                 <div class="title-line bottom"></div>
             </div>
             <div class="images">
-                <img src="shed-1.jpg" alt="Shed roof image 1" />
+                <!--img src="shed-1.jpg" alt="Shed roof image 1" /-->
                 <img src="shed-2.jpg" alt="Shed roof image 2" />
             </div>
         </section>
